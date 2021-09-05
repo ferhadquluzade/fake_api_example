@@ -155,7 +155,8 @@ class _MyHomePageState extends State<MyHomePage> {
 
   //accpets post that will be posted and returns result
   //attributes apart from title can't be edited by user as
-  //they are automatically done
+  //they are automatically generated and 
+  //returned in the response to post function
   Future<Post> _submitPost(String postToSubmit) async {
     var response =
         await http.post(Uri.parse("https://jsonplaceholder.typicode.com/posts"),
